@@ -76,21 +76,21 @@ public class EmployeeDetails{
 		this.salary = salary;
 	}
 	
-//static EmployeeDetails listEmployeeDetails() {
-//	
-////	private static List<EmployeeDetails> employees = new ArrayList<>();
-////	if (!employees) {
-////        System.out.println("No employees have been added yet.");
-////    } else {
-//        System.out.println("\nList of Employees:");
-//        for (EmployeeDetails employee : employees) {
-//            System.out.println("Name: " + employee.getName());
-//            System.out.println("Employee ID: " + employee.getEmployeeId());
-//            System.out.println("Date of Employment: " + employee.getDateofEmployment());
-//            System.out.println("Salary: " + employee.getSalary());
-//            System.out.println("---------------------------");
-//        }
-//    }
+static void listEmployeeDetails() {
+	
+	List<EmployeeDetails> employees = new ArrayList<>();
+	if (employees.isEmpty()) {
+        System.out.println("No employees have been added yet.");
+    } else {
+        System.out.println("\nList of Employees:");
+        for (EmployeeDetails employee : employees) {
+            System.out.println("Name: " + employee.getName());
+            System.out.println("Employee ID: " + employee.getEmployeeId());
+            System.out.println("Date of Employment: " + employee.getDateofEmployment());
+            System.out.println("Salary: " + employee.getSalary());
+        }
+    }
+}
 
 
 public static void main(String[] args) {

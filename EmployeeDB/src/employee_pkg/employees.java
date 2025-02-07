@@ -20,9 +20,8 @@ public class employees {
 		int input = userInput.nextInt();
 		
 		switch (input) {
-		
 		case 1:
-			
+			EmployeeDetails.listEmployeeDetails();
 			break;
 		case 2:
 			EmployeeDetails newEmployee = EmployeeDetails.addEmployeeDetails();
@@ -36,8 +35,8 @@ public class employees {
 		default:
 			System.out.println("Invalid entry");
 			break;
-			
 		}
+		mainMenu();
 	}
 
 	public static void main(String[] args) {
